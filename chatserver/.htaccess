@@ -1,0 +1,9 @@
+## politica de CORS para esta app
+# Permitir solicitudes CORS desde cualquier origen
+Header always set Access-Control-Allow-Origin "*"
+
+# Permitir métodos CORS POST, GET, PUT y DELETE
+Header always set Access-Control-Allow-Methods "POST, GET, PUT, DELETE"
+
+# Permitir encabezados CORS Content-Type, Authorization y Accept
+Header always set Access-Control-Allow-Headers "Content-Type, Authorization, Accept"
