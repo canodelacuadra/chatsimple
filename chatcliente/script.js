@@ -17,7 +17,7 @@ if (remitente === ''|| mensaje==='') {
       return false;
     } 
     // Enviar el mensaje al servicio de mensajería.
-    fetch("http://localhost/chatserver/set-mensaje.php", {
+    fetch("http://localhost/chatsimple/chatserver/set-mensajes.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -44,7 +44,7 @@ if (remitente === ''|| mensaje==='') {
       });
   }
   function getMensajes() {
-      fetch('http://localhost/chatserver/get-mensajes.php')
+      fetch('http://localhost/chatsimple/chatserver/get-mensajes.php')
   .then((response) => {
     return response.json()
   })
